@@ -2,32 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@keyframes fade{
+    from {transform:scale(0.5);}
+    to {transform:scale(1)}   
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.fade{
+    animation:fade 1s 2s linear ;
+ 
+    
+}
+@keyframes progress{
+    from {transform:translateX(0);}
+    to {transform:translateX(-30px)}   
+}
+@keyframes retard{
+    from {transform:translateX(0);}
+    to {transform:translateX(50px)}   
+}
+.retardAnimate{
+    animation:retard 1s 2s linear ;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.trananimate{
+    animation:progress 1s 2s linear ;
+}
+.tra{
+   transition:opacity 1s 2s linear ;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
