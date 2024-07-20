@@ -49,7 +49,7 @@ export default function Header() {
   </p>
     <p className='text-center pt-3 text-2xl max-sm:ml-[12%] text-wrap '>
         I AM AN IT ENGINNER && FRONTEND DEVELOPER</p>
-      <button className='py-1 px-7 text-sm text-center text-slate-800 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full ml-[45%] mt-6 shadow-sm shadow-yellow-300 hover:animate-bounce max-sm:ml-[20%]'>My Works</button>
+      <button className='py-1 px-7 text-sm text-center text-slate-800 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full ml-[45%] mt-6 shadow-sm shadow-yellow-300 hover:animate-bounce max-sm:ml-[22%]'>My Works</button>
     </section>
     </div>
   )
