@@ -23,7 +23,7 @@ export default function Project2(){
         <div className="w-full  h-[300px] mt-9">
             <h3 className='text-center font-bold text-2xl p-5 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-blue-300'><span className='underline underline-offset-4 text-yellow-300'>MY </span> PROJECTS</h3>
             <ul  ref={ref} className='w-full flex flex-col gap-7  items-center'>
-                {pro.map((ele,index)=>(
+                {pro?.map((ele,index)=>(
                   <motion.li 
                   key={index}
                   variants={projectVariants}
@@ -31,7 +31,7 @@ export default function Project2(){
                   animate={isInView ? 'animate' : ' initial'}
                   transition={{duration :0.3 ,delay:index * 0.3}}
                   >
-                      <button key={ele.id} className='bg-gradient-to-r  from-yellow-500 to-blue-300 w-32 h-7 rounded-md ' onClick={()=>{document.getElementById(`my_modal ${ele.id}`).showModal()}}>{ele.title}</button>
+                      <button key={ele.id} className='bg-gradient-to-r  from-yellow-500 to-blue-300 w-32 h-7 rounded-md ' onClick={()=>{document.getElementById(`my_modal_${ele.id}`).showModal()}}>{ele.title}</button>
                       <dialog id={`my_modal_${ele.id}`} className="modal border-gray-800  text-white shadow-lg shadow-gray-600">
                    <div className="modal-box border-gray-800 bg-gray-950  text-white shadow-lg shadow-gray-600">
                     <h3 className="font-bold text-lg text-yellow-500">{ele.title}</h3>

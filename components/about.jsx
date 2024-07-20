@@ -25,7 +25,7 @@ export default function About() {
             </p>
             <div className='flex flex-row gap-3 mt-5'>
             <a href='#contacts' ><button className='sm:py-1 px-5 font-bold text-sm text-center text-slate-800 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full  shadow-sm shadow-yellow-300 hover:animate-pulse'>contact me</button></a>
-        <a href='/Reem.pdf' target='_blank' download ><button className='py-1 px-5 font-bold  text-sm text-center text-slate-800 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full  shadow-sm shadow-yellow-300 hover:animate-pulse'>Download CV</button></a>
+        <a href='/Reem Hasancv.pdf' target='_blank' download><button className='py-1 px-5 font-bold  text-sm text-center text-slate-800 bg-gradient-to-r from-yellow-400 to-yellow-300 rounded-full  shadow-sm shadow-yellow-300 hover:animate-pulse'>Download CV</button></a>
             </div>
             
            

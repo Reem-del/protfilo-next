@@ -13,12 +13,12 @@ export default function Header() {
     <div className='w-full h-[400px] relative '>
     <Image src='/one.avif' alt='head' fill className='brightness-50' />
     <nav className='absolute w-full flex flex-row justify-between text-white p-3 font-serif'>
-      <Link className='text-xl ' href='/'>Protfilio</Link>
+      <Link className='text-xl hover:text-yellow-400' href='/'>Protfilio</Link>
       <div className='flex flex-row gap-3 max-sm:hidden'>
-      <Link href='#About'>About</Link>
-      <Link href='#Service'>Service</Link>
-      <Link href='#Projects'>Projects</Link>
-      <Link href='#contacts'>Contacts</Link>
+      <Link className='hover:text-yellow-400' href='#About'>About</Link>
+      <Link className='hover:text-yellow-400' href='#Service'>Service</Link>
+      <Link  className='hover:text-yellow-400' href='#Projects'>Projects</Link>
+      <Link className='hover:text-yellow-400'  href='#contacts'>Contacts</Link>
       </div>
       <div className="dropdown dropdown-end sm:hidden">
      <div tabIndex={0} ><FiMenu size={23} /></div>
@@ -31,8 +31,8 @@ export default function Header() {
 </div>
       
     </nav> 
-    <section className='absolute  left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-white  h-[50%] max-sm:left-[33%] w-full'>
-    <p className='min-md:font-extrabold text-2xl text-center mt-3 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200 max-sm:ml-6 text-wrap'>
+    <section className='absolute  left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] text-white  h-[50%] '>
+    <p className='min-md:font-extrabold text-2xl text-center mt-3 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-200 max-sm:ml-7 text-wrap'>
     <TypeAnimation
       sequence={[
         'I AM',
