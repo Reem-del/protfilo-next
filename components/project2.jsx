@@ -32,8 +32,8 @@ export default function Project2(){
                   transition={{duration :0.3 ,delay:index * 0.3}}
                   >
                       <button key={ele.id} className='bg-gradient-to-r  from-yellow-500 to-blue-300 w-32 h-7 rounded-md ' onClick={()=>{document.getElementById(`my_modal_${ele.id}`).showModal()}}>{ele.title}</button>
-                      <dialog id={`my_modal_${ele.id}`} className="modal border-gray-800  text-white shadow-lg shadow-gray-600  max-[370px]:w-56">
-                   <div className="modal-box border-gray-800 bg-gray-950  text-white shadow-lg shadow-gray-600 max-sm:w-56">
+                      <dialog id={`my_modal_${ele.id}`} className="modal ">
+                   <div className="modal-box border-gray-800 bg-gray-950  text-white shadow-lg shadow-gray-600">
                     <h3 className="font-bold text-lg text-yellow-500">{ele.title}</h3>
                   <p className="py-4 ">{ele.description}</p>
                   <div className="modal-action">
